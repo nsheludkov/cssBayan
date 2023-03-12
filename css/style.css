@@ -74,7 +74,7 @@ input[type=checkbox] {
   opacity: 0;
 }
 
-input[type=checkbox]:checked ~ .img-item{
+input[type=checkbox]:checked ~ .img-item > img{
     height: 100%;
     width: 100%;
     transition: width .5s;
