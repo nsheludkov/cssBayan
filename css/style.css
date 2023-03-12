@@ -1,5 +1,12 @@
+@font-face {
+    font-family: 'Arial-MT';
+    src: url("../assets/fonts/Arial-MT.woff"); /* Путь к файлу со шрифтом */
+}
+  
 body {
     background-color: bisque;
+    font-family: 'Arial', sans-serif;
+    font-size: 1.2em;
 }
 
 .container {
@@ -65,6 +72,7 @@ img{
     transition: width .5s;        
 }
 
+/*checkbox*/
 input[type=checkbox] {
     position: absolute;
   cursor: pointer;
@@ -81,5 +89,11 @@ input[type=checkbox]:checked ~ .img-item > img{
 }
 
 input[type=checkbox]:checked ~ .summary{
-    color: #fff;
+    color: red;
+    font-weight: 700;
+}
+
+input[type=checkbox]:checked ~ .summary > .openicon{
+    transform: rotateZ(45deg);
+    transition: transform .5s;
 }
